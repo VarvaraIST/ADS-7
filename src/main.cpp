@@ -1,8 +1,9 @@
 // Copyright 2026 NNTU-CS
-#include "train.h"
 #include <iostream>
 #include <random>
 #include <vector>
+
+#include "train.h"
 
 int main() {
     std::vector<int> sizes = {
