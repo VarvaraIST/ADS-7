@@ -1,12 +1,14 @@
 // Copyright 2026 NNTU-CS
 #include <iostream>
 #include "train.h"
-#include <vector>
 #include <random>
+#include <vector>
 
 int main() {
-    std::vector<int> sizes = { 10, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900,
-                              1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 };
+    std::vector<int> sizes = { 
+    10, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 
+    1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000 
+};
     std::vector<std::pair<int, int>> resultsAllOff;
     std::vector<std::pair<int, int>> resultsAllOn;
     std::vector<std::pair<int, int>> resultsRandom;
@@ -41,17 +43,17 @@ int main() {
     }
 
     std::cout << "\n -All OFF- \n";
-    for (auto& p : resultsAllOff) {
+    for (const auto& p : resultsAllOff) {
         std::cout << p.first << ", " << p.second << "\n";
     }
 
     std::cout << "\n -All ON- \n";
-    for (auto& p : resultsAllOn) {
+    for (const auto& p : resultsAllOn) {
         std::cout << p.first << ", " << p.second << "\n";
     }
 
     std::cout << "\n -Random- \n";
-    for (auto& p : resultsRandom) {
+    for (const auto& p : resultsRandom) {
         std::cout << p.first << ", " << p.second << "\n";
     }
 
